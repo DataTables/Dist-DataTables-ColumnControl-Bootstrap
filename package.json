@@ -5,7 +5,7 @@
     "module": "js/columnControl.bootstrap.mjs",
     "style": "css/columnControl.bootstrap.css",
     "types": "./types/columnControl.bootstrap.d.ts",
-    "version": "0.0.1",
+    "version": "0.9.2",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
@@ -14,10 +14,10 @@
     ],
     "keywords": [
         "ColumnControl",
- "search",
- "filter",
- "buttons",
- "column visibility",
+        "search",
+        "filter",
+        "buttons",
+        "column visibility",
         "Bootstrap",
         "Datatables",
         "table",
@@ -25,8 +25,8 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-columncontrol": "~0.0.1",
-        "datatables.net-bs": "^2.3"
+        "datatables.net-columncontrol": "0.9.2",
+        "datatables.net-bs": "^2.3.0"
     },
     "moduleType": [
         "globals",
