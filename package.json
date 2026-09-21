@@ -1,16 +1,15 @@
 {
     "name": "datatables.net-columncontrol-bs",
     "description": "ColumnControl for DataTables with styling for [Bootstrap](https://getbootstrap.com/docs/3.3/)",
-    "main": "js/columnControl.bootstrap.js",
-    "module": "js/columnControl.bootstrap.mjs",
-    "style": "css/columnControl.bootstrap.css",
+    "main": "./js/columnControl.bootstrap.js",
+    "module": "./js/columnControl.bootstrap.mjs",
+    "style": "./css/columnControl.bootstrap.css",
     "types": "./types/columnControl.bootstrap.d.ts",
     "version": "2.0.2",
     "files": [
-        "css/**/*.css",
-        "js/**/*.js",
-        "js/**/*.mjs",
-        "types/**/*.d.ts"
+        "js",
+        "css",
+        "types"
     ],
     "keywords": [
         "ColumnControl",
@@ -38,5 +37,24 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/DataTables/ColumnControl.git"
-    }
+    },
+    "exports": {
+        ".": {
+            "types": "./types/columnControl.bootstrap.d.ts",
+            "import": "./js/columnControl.bootstrap.mjs",
+            "default": "./js/columnControl.bootstrap.mjs",
+            "require": "./js/columnControl.bootstrap.js"
+        },
+        "./js/*": "./js/*",
+        "./css": {
+            "types": "./types/css.d.ts",
+            "default": "./css/columnControl.bootstrap.css"
+        },
+        "./css/*": {
+            "types": "./types/css.d.ts",
+            "default": "./css/*"
+        },
+        "./package.json": "./package.json"
+    },
+    "sideEffects": true
 }
