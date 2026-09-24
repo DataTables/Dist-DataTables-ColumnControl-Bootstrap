@@ -41,9 +41,10 @@
     "exports": {
         ".": {
             "types": "./types/columnControl.bootstrap.d.ts",
+            "style": "./css/columnControl.bootstrap.css",
             "import": "./js/columnControl.bootstrap.mjs",
-            "default": "./js/columnControl.bootstrap.mjs",
-            "require": "./js/columnControl.bootstrap.js"
+            "require": "./js/columnControl.bootstrap.js",
+            "default": "./js/columnControl.bootstrap.mjs"
         },
         "./js/*": "./js/*",
         "./css": {
